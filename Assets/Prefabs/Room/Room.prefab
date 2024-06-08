@@ -96,6 +96,7 @@ Transform:
   - {fileID: 5385052388300766295}
   - {fileID: 5287149017609155505}
   - {fileID: 8949066552792067398}
+  - {fileID: 625754687896145705}
   m_Father: {fileID: 2359405247609365745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2233108545916667552
@@ -379,6 +380,59 @@ Transform:
   - {fileID: 5486231411175729596}
   m_Father: {fileID: 280845492413928991}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &3454590197866301643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 625754687896145705}
+  - component: {fileID: 7357068366854871787}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: RoomCollider
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &625754687896145705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3454590197866301643}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4359989546910281045}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7357068366854871787
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3454590197866301643}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.1, y: 3.5, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3789594884481975794
 GameObject:
   m_ObjectHideFlags: 0

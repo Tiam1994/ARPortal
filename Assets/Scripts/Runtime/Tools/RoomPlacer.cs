@@ -13,7 +13,7 @@ namespace ARPortal.Runtime.Tools
 			SetupRoomPosition(targetPosition);
 		}
 
-		public void RemoveRoom()
+		public void HideRoom()
 		{
 			_room.gameObject.SetActive(false);
 		}

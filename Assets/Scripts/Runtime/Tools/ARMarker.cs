@@ -32,6 +32,13 @@ namespace ARPortal.Runtime.Tools
 			_screenCenter = new Vector3(Screen.width / 2, Screen.height / 2);
 			_raycastManager = raycastManager;
 			_isMarkerActivated = true;
+			_marker.SetActive(true);
+		}
+
+		public void Restart()
+		{
+			_isMarkerActivated = true;
+			_marker.SetActive(true);
 		}
 
 		private void CreateMarker()
@@ -64,6 +71,8 @@ namespace ARPortal.Runtime.Tools
 			{
 				Vector3 tapPosition = Input.GetTouch(0).position;
 				OnTap.Invoke(_marker.transform.position);
+				_isMarkerActivated = false;
+				_marker.SetActive(false);
 			}
 		}
 	}
