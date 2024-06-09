@@ -644,7 +644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _roomPlacer: {fileID: 1258926488}
-  _postersLoader: {fileID: 1913439724}
+  _postersLoader: {fileID: 1913439726}
   _raycastManager: {fileID: 1429386933}
   _marker: {fileID: 962760086}
   _player: {fileID: 375178579}
@@ -1163,7 +1163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1913439725}
-  - component: {fileID: 1913439724}
+  - component: {fileID: 1913439726}
   m_Layer: 0
   m_Name: ResourcesLoading
   m_TagString: Untagged
@@ -1171,23 +1171,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1913439724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913439723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f7dbd2bb2a87024baca2678cf30a8e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _url: https://api.github.com/repos/Tiam1994/ImagesRepository/contents
-  _images:
-  - {fileID: 1219956999}
-  - {fileID: 1219956998}
-  - {fileID: 1219956996}
 --- !u!4 &1913439725
 Transform:
   m_ObjectHideFlags: 0
@@ -1203,6 +1186,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1913439726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913439723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b78cecc16cd6541a3fb958a4741df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _url: https://api.github.com/repos/Tiam1994/ImagesRepository/contents
+  _images:
+  - {fileID: 1219956999}
+  - {fileID: 1219956998}
+  - {fileID: 1219956996}
 --- !u!1001 &6635184209941309785
 PrefabInstance:
   m_ObjectHideFlags: 0

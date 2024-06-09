@@ -8,7 +8,7 @@ using SimpleJSON;
 
 namespace ARPortal.Runtime.ResourcesLoading
 {
-	public class PstersLoader : MonoBehaviour
+	public class PostersLoader : MonoBehaviour
 	{
 		[SerializeField] private string _url;
 		[SerializeField] private List<Image> _images;
@@ -18,6 +18,9 @@ namespace ARPortal.Runtime.ResourcesLoading
 
 		public void DownloadImages()
 		{
+			this.KillCoroutine(ref _loadDataCoroutine);
+			this.KillCoroutine(ref _loadImagesCoroutine);
+
 			_loadDataCoroutine = StartCoroutine(LoadImagesFromURL(_url));
 		}
 
@@ -74,9 +77,6 @@ namespace ARPortal.Runtime.ResourcesLoading
 				Texture2D texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
 				uiImage.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
 			}
-
-			this.KillCoroutine(ref _loadDataCoroutine);
-			this.KillCoroutine(ref _loadImagesCoroutine);
 		}
 	}
 }

@@ -9,7 +9,7 @@ namespace ARPortal.Runtime.EntryPoints
 	public class ARPortalEntryPoint : MonoBehaviour
 	{
 		[SerializeField] private RoomPlacer _roomPlacer;
-		[SerializeField] private PstersLoader _postersLoader;
+		[SerializeField] private PostersLoader _postersLoader;
 		[SerializeField] private ARRaycastManager _raycastManager;
 		[SerializeField] private ARMarker _marker;
 		[SerializeField] private ARPlayer _player;
