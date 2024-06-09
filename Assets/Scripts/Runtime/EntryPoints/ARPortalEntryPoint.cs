@@ -1,3 +1,4 @@
+using ARPortal.Runtime.ResourcesLoading;
 using ARPortal.Runtime.PlayerLogic;
 using UnityEngine.XR.ARFoundation;
 using ARPortal.Runtime.Tools;
@@ -8,6 +9,7 @@ namespace ARPortal.Runtime.EntryPoints
 	public class ARPortalEntryPoint : MonoBehaviour
 	{
 		[SerializeField] private RoomPlacer _roomPlacer;
+		[SerializeField] private PstersLoader _postersLoader;
 		[SerializeField] private ARRaycastManager _raycastManager;
 		[SerializeField] private ARMarker _marker;
 		[SerializeField] private ARPlayer _player;
@@ -30,6 +32,7 @@ namespace ARPortal.Runtime.EntryPoints
 		private void Initialize()
 		{
 			_marker.Initialize(_raycastManager);
+			_postersLoader.DownloadImages();
 		}
 
 		private void Restart()
