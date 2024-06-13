@@ -1,6 +1,7 @@
 using ARPortal.Runtime.ResourcesLoading;
 using ARPortal.Runtime.PlayerLogic;
 using UnityEngine.XR.ARFoundation;
+using ARPortal.Runtime.Analytics;
 using ARPortal.Runtime.Tools;
 using UnityEngine;
 
@@ -31,6 +32,7 @@ namespace ARPortal.Runtime.EntryPoints
 
 		private void Initialize()
 		{
+			FirebaseEventManager.Instance.Initialize();
 			_marker.Initialize(_raycastManager);
 			_postersLoader.DownloadImages();
 		}
