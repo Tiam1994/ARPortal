@@ -44,7 +44,7 @@ namespace ARPortal.Runtime.PlayerLogic
 		{
 			Ray ray = Camera.main.ScreenPointToRay(_screenCenter);
 			RaycastHit hit;
-			bool hitInteractable = Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask("InteractableObject"));
+			bool hitInteractable = Physics.Raycast(ray, out hit, Mathf.Infinity, LayerMask.GetMask(LayerConstants.INTERACTION_OBJECT_LAYER));
 
 			if (hitInteractable)
 			{
