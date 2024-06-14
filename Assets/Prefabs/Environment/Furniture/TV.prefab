@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4675578109049514}
   - component: {fileID: 33066368419104518}
   - component: {fileID: 23549074185471512}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4374188577316554}
   - component: {fileID: 33554207339748290}
   - component: {fileID: 23111865072778114}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Unit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4340825526862282}
   - component: {fileID: 33248919680147368}
   - component: {fileID: 23068121292754178}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 4457419614222144}
   - component: {fileID: 1073273988430559497}
   - component: {fileID: 8903634843923598780}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -510,7 +510,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7811417065925541411}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SelectionMarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 1147047359758032327}
   - component: {fileID: 3656668524211713190}
   - component: {fileID: 5209414483221471604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6335785533192647635}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1534855561463739255}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,9 +694,9 @@ GameObject:
   m_Component:
   - component: {fileID: 695192271379423617}
   - component: {fileID: 3978298145509460445}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: TVInteractableCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

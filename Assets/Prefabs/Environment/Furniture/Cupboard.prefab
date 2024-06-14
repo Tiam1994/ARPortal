@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1523220209510883730}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 457060142342161264}
   - component: {fileID: 441748007743255942}
   - component: {fileID: 436235947097761234}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 452826993542904062}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CoatHanger (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 456568938597721386}
   - component: {fileID: 445309272190600352}
   - component: {fileID: 435233309629843426}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 1068175312663319855}
   - component: {fileID: 1056689492377261689}
   - component: {fileID: 1047174742731339791}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WhiteShirt B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 1295009737707196320}
   - component: {fileID: 1269739922052070578}
   - component: {fileID: 1278222418103570370}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RoundBox B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7351100363613375624}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Accessories
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 1668364568808564206}
   - component: {fileID: 1680284680775013144}
   - component: {fileID: 1692552135492846412}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +530,7 @@ GameObject:
   - component: {fileID: 1668296125129278388}
   - component: {fileID: 1684059387942806078}
   - component: {fileID: 1691865927362175356}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1673147438760779360}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CoatHanger (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 3669232746205338557}
   - component: {fileID: 3684591443786037651}
   - component: {fileID: 1879701780785408771}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Railing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 2336190834532804021}
   - component: {fileID: 2311420024572216383}
   - component: {fileID: 2321495982990575485}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2338808464657414241}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CoatHanger (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 2335701275205338095}
   - component: {fileID: 2313928064268252441}
   - component: {fileID: 2319367415395607885}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -928,7 +928,7 @@ GameObject:
   - component: {fileID: 9209354505613012564}
   - component: {fileID: 5637303600043194029}
   - component: {fileID: 2721176672636179302}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SelectionMarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1011,7 +1011,7 @@ GameObject:
   - component: {fileID: 2425538892644981119}
   - component: {fileID: 2436759718100901559}
   - component: {fileID: 2446089464944289359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FormalShirt (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6463722198430985209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1127,7 +1127,7 @@ GameObject:
   - component: {fileID: 3191006903448764016}
   - component: {fileID: 3188437140335405232}
   - component: {fileID: 3176667780571729526}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RoundBox C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1210,7 +1210,7 @@ GameObject:
   - component: {fileID: 3881231527011678517}
   - component: {fileID: 3865520086765107831}
   - component: {fileID: 3855420698175297553}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WhiteShirt A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 4011586977461042846}
   - component: {fileID: 4022884150141319510}
   - component: {fileID: 4032826918050857390}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FormalShirt (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,7 +1376,7 @@ GameObject:
   - component: {fileID: 983404268325509362}
   - component: {fileID: 8587334707746229468}
   - component: {fileID: 7284967085591429166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PackSpace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1457,7 +1457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7059980747685878338}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pivot Door B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7121449547814371809}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pivot Door A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1521,7 +1521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4570792178670772413}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1556,7 +1556,7 @@ GameObject:
   - component: {fileID: 6556510460073547239}
   - component: {fileID: 6522503146332722853}
   - component: {fileID: 6530418156252411075}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BlackShirt A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1637,7 +1637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9076327235383490242}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clothes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1679,7 +1679,7 @@ GameObject:
   - component: {fileID: 6813052574290256648}
   - component: {fileID: 6842135030740475998}
   - component: {fileID: 6833780398770687528}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BlackShirt B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1762,7 +1762,7 @@ GameObject:
   - component: {fileID: 8993991381167741434}
   - component: {fileID: 3306847539763542891}
   - component: {fileID: 5855718923282301134}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Door A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1844,9 +1844,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1602459633341444004}
   - component: {fileID: 2218188123553356049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: CupboardInteractableCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1898,7 +1898,7 @@ GameObject:
   - component: {fileID: 8127634658993379348}
   - component: {fileID: 8120845964906405852}
   - component: {fileID: 8111078603910801188}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FormalShirt (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1981,7 +1981,7 @@ GameObject:
   - component: {fileID: 8323254966697397474}
   - component: {fileID: 8355507713174895642}
   - component: {fileID: 8347846841587026572}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BlackShirt C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2064,7 +2064,7 @@ GameObject:
   - component: {fileID: 5168289973048024144}
   - component: {fileID: 258455190799058181}
   - component: {fileID: 7059585232257212462}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Door B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2147,7 +2147,7 @@ GameObject:
   - component: {fileID: 8857429840141416414}
   - component: {fileID: 8835345823882577702}
   - component: {fileID: 8840653689044251056}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WhiteShirt C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2230,7 +2230,7 @@ GameObject:
   - component: {fileID: 6356201786863501308}
   - component: {fileID: 940641944051760854}
   - component: {fileID: 926321953113577102}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cupboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2395,7 +2395,7 @@ GameObject:
   - component: {fileID: 9010907631296509618}
   - component: {fileID: 9037125442302224554}
   - component: {fileID: 9029401542522325620}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RoundBox A
   m_TagString: Untagged
   m_Icon: {fileID: 0}

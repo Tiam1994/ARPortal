@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4054477594663146}
   - component: {fileID: 4178470308884815456}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4741015728262266}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hinge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4324719144420402}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 4894843694610494}
   - component: {fileID: 33585434736983116}
   - component: {fileID: 23353681077531558}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,9 +300,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5305911291287421972}
   - component: {fileID: 7906968146175243394}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: DoorInteractableCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 4895170964073779958}
   - component: {fileID: 3332419433096292535}
   - component: {fileID: 3613473389238713719}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9087046931301993399}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 5052328841433052303}
   - component: {fileID: 6543798641565829154}
   - component: {fileID: 420286730594616119}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 5418331913478019582}
   - component: {fileID: 2953615410450156672}
   - component: {fileID: 6500286159714094979}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6417493951392023640}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SelectionMarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}

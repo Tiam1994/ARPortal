@@ -5,11 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - RoomCollider
+  - DoorInteractableCollider
+  - CupboardInteractableCollider
+  - StandingLampInteractableCollider
+  - TVInteractableCollider
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - InteractableObject
   - Water
   - UI
   - 

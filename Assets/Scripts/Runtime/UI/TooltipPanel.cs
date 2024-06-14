@@ -13,21 +13,12 @@ namespace ARPortal.Runtime.UI
 
 		private readonly int _imageScalingParametrHash = Animator.StringToHash("IsImageScaling");
 
-		public void ShowTooltipWhitoutImage(string tooltipMessage)
+		public void ShowTooltip(string tooltipMessage, Sprite tooltipImage, bool imageAnimationEnabled)
 		{
 			_content.SetActive(true);
-			_tooltipImage.gameObject.SetActive(false);
 
 			_tooltipMessage.text = tooltipMessage;
-		}
-
-		public void ShowTooltipWithImage(string tooltipMessage, Image tooltipImage, bool imageAnimationEnabled)
-		{
-			_content.SetActive(true);
-			_tooltipImage.gameObject.SetActive(true);
-
-			_tooltipMessage.text = tooltipMessage;
-			_tooltipImage = tooltipImage;
+			_tooltipImage.sprite = tooltipImage;
 
 			ImageAnimationSwitcher(imageAnimationEnabled);
 		}

@@ -3,6 +3,8 @@ using ARPortal.Runtime.PlayerLogic;
 using UnityEngine.XR.ARFoundation;
 using ARPortal.Runtime.Analytics;
 using ARPortal.Runtime.Tools;
+using System.Threading.Tasks;
+using ARPortal.Runtime.UI;
 using UnityEngine;
 
 namespace ARPortal.Runtime.EntryPoints
@@ -14,45 +16,99 @@ namespace ARPortal.Runtime.EntryPoints
 		[SerializeField] private ARRaycastManager _raycastManager;
 		[SerializeField] private ARMarker _marker;
 		[SerializeField] private ARPlayer _player;
+		[SerializeField] private UIManager _uiManager;
 
-		private void Start()
+		private InitialLaunchDetector _initialLaunchDetector = new InitialLaunchDetector();
+
+		private float _sessionStartTime;
+
+		private async void Start()
 		{
-			Initialize();
+			await InitializeAsync();
 		}
 
-		private void OnEnable()
+		private async Task InitializeAsync()
 		{
-			SubscribeToEvents();
-		}
+			await FirebaseEventManager.Instance.InitializeAsync();
 
-		private void OnDisable()
-		{
-			UnsubscribeToEvents();
-		}
-
-		private void Initialize()
-		{
-			FirebaseEventManager.Instance.Initialize();
+			_initialLaunchDetector.InitializeUniqueIdentifier();
 			_marker.Initialize(_raycastManager);
 			_postersLoader.DownloadImages();
+			_player.Initialize(_initialLaunchDetector.IsFirstApplicationLaunch);
+
+			SubscribeToEvents();
+			StartSession();
 		}
 
-		private void Restart()
+		private void StartSession()
 		{
-			_marker.Restart();
-			_roomPlacer.HideRoom();
+			_sessionStartTime = Time.time;
+
+			if(_initialLaunchDetector.IsFirstApplicationLaunch)
+			{
+				_uiManager.ActivateTooltips();
+			}
+			else
+			{
+				_uiManager.HideTooltips();
+			}
+
+			FirebaseEventManager.Instance.LogStartSessionEvent();
+		}
+
+		private void EndSession()
+		{
+			float timeSpent = Time.time - _sessionStartTime;
+			FirebaseEventManager.Instance.LogEndSessionEvent(timeSpent);
 		}
 
 		private void SubscribeToEvents()
 		{
 			_marker.OnTap += _roomPlacer.PlaceRoom;
-			_player.OnLeftRoom += Restart;
+			_player.OnLeftRoom += RestartRoomPlacement;
+
+			if(_initialLaunchDetector.IsFirstApplicationLaunch)
+			{
+				_roomPlacer.OnRoomPlaced += _uiManager.HideTooltips;
+				_player.OnInteractableObjectHit += _uiManager.ShowTooltipForInteractionObjects;
+				_player.OnInteractableObjectLost += _uiManager.HideTooltips;
+			}
 		}
 
 		private void UnsubscribeToEvents()
 		{
 			_marker.OnTap -= _roomPlacer.PlaceRoom;
-			_player.OnLeftRoom -= Restart;
+			_player.OnLeftRoom -= RestartRoomPlacement;
+
+			if (_initialLaunchDetector.IsFirstApplicationLaunch)
+			{
+				_roomPlacer.OnRoomPlaced -= _uiManager.HideTooltips;
+				_player.OnInteractableObjectHit -= _uiManager.ShowTooltipForInteractionObjects;
+				_player.OnInteractableObjectLost -= _uiManager.HideTooltips;
+			}
+		}
+
+		private void RestartRoomPlacement()
+		{
+			_marker.Restart();
+			_roomPlacer.HideRoom();
+		}
+
+		private void OnApplicationPause(bool pauseStatus)
+		{
+			if (pauseStatus)
+			{
+				EndSession();
+			}
+			else
+			{
+				StartSession();
+			}
+		}
+
+		private void OnApplicationQuit()
+		{
+			UnsubscribeToEvents();
 		}
 	}
 }
