@@ -1,7 +1,8 @@
 # ARPortal
 
-### Info
-Current project created in Unity 2022.3.20f1
+## Info
+- Current project created in Unity 2022.3.20f1
+- This project uses Git LFS to manage large files. Make sure you have Git LFS installed before cloning the repository. Otherwise you will only get pointers to large files and the project may not work properly.
 
 ## Requirements
 - Unity version 2022.3+
