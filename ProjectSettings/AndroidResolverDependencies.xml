@@ -13,9 +13,9 @@
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/12.0.0/firebase-app-unity-12.0.0.pom</file>
   </files>
   <settings>
-    <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
+    <setting name="androidAbis" value="arm64-v8a" />
     <setting name="bundleId" value="com.DefaultCompany.ARPortal" />
-    <setting name="explodeAars" value="True" />
+    <setting name="explodeAars" value="False" />
     <setting name="gradleBuildEnabled" value="True" />
     <setting name="gradlePropertiesTemplateEnabled" value="True" />
     <setting name="gradleTemplateEnabled" value="True" />
