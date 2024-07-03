@@ -15,7 +15,7 @@ namespace ARPortal.Runtime.Interaction
         private Vector3 _previousInteractorLocalPosition;
         private float _currentAngle = 0.0f;
 
-        public UnityEvent<float> OnLampRotated;
+        public UnityEvent<float> OnRotate;
 
         protected override void OnSelectEntered(SelectEnterEventArgs args)
         {
@@ -31,12 +31,12 @@ namespace ARPortal.Runtime.Interaction
             {
                 if (isSelected)
                 {
-                    RotateLamp();
+                    Rotate();
                 }
             }
         }
 
-        private void RotateLamp()
+        private void Rotate()
         {
             IXRSelectInteractor interactorSelecting = interactorsSelecting.First();
 
@@ -66,7 +66,7 @@ namespace ARPortal.Runtime.Interaction
 
             _previousInteractorLocalPosition = GetLocalInteractorPoint(interactorSelecting.transform.position);
 
-            OnLampRotated?.Invoke(_currentAngle);
+            OnRotate?.Invoke(_currentAngle);
         }
 
         private Vector3 GetLocalInteractorPoint(Vector3 position)
