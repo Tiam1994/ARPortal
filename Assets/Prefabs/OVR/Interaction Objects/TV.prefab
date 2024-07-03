@@ -302,9 +302,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _minScale: 0.8
-  _maxScale: 1.2
+  _maxScale: 1.4
   _heightScaleFactor: 1
-  _initialScaleFactor: 1
 --- !u!1 &3415474340525425360
 GameObject:
   m_ObjectHideFlags: 0
