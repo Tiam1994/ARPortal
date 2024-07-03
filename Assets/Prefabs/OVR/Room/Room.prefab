@@ -3281,7 +3281,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2564648423622186527, guid: 2eb8396ebd4545c43b3e872b090fd6fe, type: 3}
   m_PrefabInstance: {fileID: 5648883919365405091}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5777796791241235780
+--- !u!1001 &5704428931747062626
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3289,47 +3289,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8447049409789971800}
     m_Modifications:
-    - target: {fileID: 1184177582457774, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2234028900114677128, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_Name
       value: StandingLamp
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.197
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.655
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.71
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+    - target: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -3337,11 +3337,11 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
 --- !u!4 &5782217887497712384 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4586173333155396, guid: 00bcf22d5f40f3b48bb25b770265f045, type: 3}
-  m_PrefabInstance: {fileID: 5777796791241235780}
+  m_CorrespondingSourceObject: {fileID: 2239594597435789410, guid: f3595fc4f1771be4996210cfd41b3710, type: 3}
+  m_PrefabInstance: {fileID: 5704428931747062626}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6307546700092145405
 PrefabInstance:
