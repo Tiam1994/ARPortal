@@ -6,7 +6,7 @@ public class XRAnimationInteractable : MonoBehaviour
     [SerializeField] private XRGrabInteractable _interactable;
     [SerializeField] private Animator _animator;
 
-    private bool _isDoorClosed;
+    private bool _isDoorClosed = true;
 
     private readonly int _doorOpenParameterHash = Animator.StringToHash("DoorOpening");
     private readonly int _doorCloseParameterHash = Animator.StringToHash("DoorClosing");
