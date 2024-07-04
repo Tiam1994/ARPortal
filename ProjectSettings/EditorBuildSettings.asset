@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ARPortal/ARPortal.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/VRPortal/VRPortal.unity
+    guid: 0c993004018adfc4f995d18d092bbcdc
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9be321f02daaf264095bef8c3741d68b, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 300ddbecf0cd88b4a80434c392cc85fe, type: 2}
