@@ -5,9 +5,9 @@ using System.Linq;
 
 namespace ARPortal.Runtime.Interaction
 {
-	[RequireComponent (typeof (Rigidbody))]
-	public class XRRotateInteractable : XRBaseInteractable
-	{
+    [RequireComponent(typeof(Rigidbody))]
+    public class XRRotateTransformer : XRBaseInteractable
+    {
         [SerializeField] private float _minAngle;
         [SerializeField] private float _maxAngle;
         [SerializeField] private float _sensitivity;
@@ -31,12 +31,12 @@ namespace ARPortal.Runtime.Interaction
             {
                 if (isSelected)
                 {
-                    Rotate();
+                    Rotating();
                 }
             }
         }
 
-        private void Rotate()
+        private void Rotating()
         {
             IXRSelectInteractor interactorSelecting = interactorsSelecting.First();
 
