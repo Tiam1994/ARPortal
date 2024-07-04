@@ -5,11 +5,11 @@ using System.Linq;
 namespace ARPortal.Runtime.Interaction
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class XRScaleInteractable : XRBaseInteractable
+    public class XRScaleTransformer : XRBaseInteractable
     {
         [SerializeField] private float _minScale;
         [SerializeField] private float _maxScale;
-        [SerializeField] private float _heightScaleFactor;
+        [SerializeField] private float _sensitivity;
 
         private Vector3 _initialScale;
         private float _initialControllerHeight;
@@ -31,23 +31,26 @@ namespace ARPortal.Runtime.Interaction
             {
                 if (isSelected)
                 {
-                    ScaleObject();
+                    Scaleing();
                 }
             }
         }
 
-        private void ScaleObject()
+        private void Scaleing()
         {
             IXRSelectInteractor interactor = interactorsSelecting.First();
 
             float currentControllerHeight = interactor.transform.position.y;
-
             float heightDifference = currentControllerHeight - _initialControllerHeight;
 
-            float newScaleFactor = 1.0f + (heightDifference * _heightScaleFactor);
-            newScaleFactor = Mathf.Clamp(newScaleFactor, _minScale, _maxScale);
+            float newScaleFactor = 1.0f + (heightDifference * _sensitivity);
 
             Vector3 newScale = _initialScale * newScaleFactor;
+
+            newScale.x = Mathf.Clamp(newScale.x, _minScale, _maxScale);
+            newScale.y = Mathf.Clamp(newScale.y, _minScale, _maxScale);
+            newScale.z = Mathf.Clamp(newScale.z, _minScale, _maxScale);
+
             transform.localScale = newScale;
 
             _currentScaleFactor = newScaleFactor;
