@@ -1,9 +1,9 @@
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine;
 
-public class XRAnimationInteractable : MonoBehaviour
+public class CupboardAnimationController : MonoBehaviour
 {
-    [SerializeField] private XRGrabInteractable _interactable;
+    [SerializeField] private XRBaseInteractable _interactable;
     [SerializeField] private Animator _animator;
 
     private bool _isDoorClosed = true;
