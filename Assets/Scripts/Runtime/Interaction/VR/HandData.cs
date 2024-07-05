@@ -1,3 +1,4 @@
+using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine;
 
 namespace ARPortal.Runtime.Interaction
@@ -7,6 +8,7 @@ namespace ARPortal.Runtime.Interaction
 		[SerializeField] private HandModelType _handType;
 		[SerializeField] private Animator _animator;
 		[SerializeField] private SkinnedMeshRenderer _skinnedMeshRenderer;
+		[SerializeField] private XRInteractorLineVisual _lineVisual;
 
 		public HandModelType HandType => _handType;
 
@@ -14,6 +16,7 @@ namespace ARPortal.Runtime.Interaction
 		{
 			_animator.enabled = enabled;
 			_skinnedMeshRenderer.enabled = enabled;
+			_lineVisual.enabled = enabled;
 		}
 	}
 }

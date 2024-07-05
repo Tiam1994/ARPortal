@@ -4324,6 +4324,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 440497498632461449}
     m_Modifications:
+    - target: {fileID: 2802265001558496037, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
+      propertyPath: _lineVisual
+      value: 
+      objectReference: {fileID: 5308172828906134753}
+    - target: {fileID: 2802265001558496037, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
+      propertyPath: _lineRenderer
+      value: 
+      objectReference: {fileID: 8715979619984347935}
     - target: {fileID: 5686134208185136530, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.001
@@ -4430,6 +4438,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5442988831689111662, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
+      propertyPath: _lineVisual
+      value: 
+      objectReference: {fileID: 8962202309356827349}
+    - target: {fileID: 5442988831689111662, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
+      propertyPath: _lineRenderer
+      value: 
+      objectReference: {fileID: 6632562104103229285}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
